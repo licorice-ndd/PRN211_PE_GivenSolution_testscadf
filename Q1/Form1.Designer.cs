@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            radioButtonFemale = new RadioButton();
+            radioButtonMale = new RadioButton();
             dateTimePicker1 = new DateTimePicker();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            textBoxName = new TextBox();
+            textBoxID = new TextBox();
+            textBoxPhone = new TextBox();
+            textBoxIDnumber = new TextBox();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
@@ -45,20 +45,25 @@
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(radioButton2);
-            groupBox1.Controls.Add(radioButton1);
+            groupBox1.Controls.Add(radioButtonFemale);
+            groupBox1.Controls.Add(radioButtonMale);
             groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(textBoxName);
+            groupBox1.Controls.Add(textBoxID);
+            groupBox1.Controls.Add(textBoxPhone);
+            groupBox1.Controls.Add(textBoxIDnumber);
             groupBox1.Controls.Add(label6);
             groupBox1.Controls.Add(label5);
             groupBox1.Controls.Add(label4);
@@ -72,27 +77,27 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Input";
             // 
-            // radioButton2
+            // radioButtonFemale
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(200, 95);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(63, 19);
-            radioButton2.TabIndex = 12;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Female";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioButtonFemale.AutoSize = true;
+            radioButtonFemale.Location = new Point(200, 95);
+            radioButtonFemale.Name = "radioButtonFemale";
+            radioButtonFemale.Size = new Size(63, 19);
+            radioButtonFemale.TabIndex = 12;
+            radioButtonFemale.TabStop = true;
+            radioButtonFemale.Text = "Female";
+            radioButtonFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // radioButtonMale
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(95, 95);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(51, 19);
-            radioButton1.TabIndex = 11;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Male";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButtonMale.AutoSize = true;
+            radioButtonMale.Location = new Point(95, 95);
+            radioButtonMale.Name = "radioButtonMale";
+            radioButtonMale.Size = new Size(51, 19);
+            radioButtonMale.TabIndex = 11;
+            radioButtonMale.TabStop = true;
+            radioButtonMale.Text = "Male";
+            radioButtonMale.UseVisualStyleBackColor = true;
             // 
             // dateTimePicker1
             // 
@@ -101,33 +106,33 @@
             dateTimePicker1.Size = new Size(200, 23);
             dateTimePicker1.TabIndex = 10;
             // 
-            // textBox4
+            // textBoxName
             // 
-            textBox4.Location = new Point(94, 54);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 9;
+            textBoxName.Location = new Point(94, 54);
+            textBoxName.Name = "textBoxName";
+            textBoxName.Size = new Size(100, 23);
+            textBoxName.TabIndex = 9;
             // 
-            // textBox3
+            // textBoxID
             // 
-            textBox3.Location = new Point(94, 12);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 8;
+            textBoxID.Location = new Point(94, 12);
+            textBoxID.Name = "textBoxID";
+            textBoxID.Size = new Size(100, 23);
+            textBoxID.TabIndex = 8;
             // 
-            // textBox2
+            // textBoxPhone
             // 
-            textBox2.Location = new Point(94, 171);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 7;
+            textBoxPhone.Location = new Point(94, 171);
+            textBoxPhone.Name = "textBoxPhone";
+            textBoxPhone.Size = new Size(100, 23);
+            textBoxPhone.TabIndex = 7;
             // 
-            // textBox1
+            // textBoxIDnumber
             // 
-            textBox1.Location = new Point(94, 217);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 6;
+            textBoxIDnumber.Location = new Point(94, 217);
+            textBoxIDnumber.Name = "textBoxIDnumber";
+            textBoxIDnumber.Size = new Size(100, 23);
+            textBoxIDnumber.TabIndex = 6;
             // 
             // label6
             // 
@@ -185,6 +190,10 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(button4);
+            groupBox2.Controls.Add(button3);
+            groupBox2.Controls.Add(button2);
+            groupBox2.Controls.Add(button1);
             groupBox2.Location = new Point(588, 12);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(200, 253);
@@ -211,6 +220,42 @@
             dataGridView1.Size = new Size(682, 206);
             dataGridView1.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.Location = new Point(6, 22);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Refresh";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(102, 22);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 1;
+            button2.Text = "Close";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(6, 54);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 2;
+            button3.Text = "Add";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(102, 54);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 3;
+            button4.Text = "Edit";
+            button4.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -224,6 +269,7 @@
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
             groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -241,12 +287,16 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private TextBox textBoxID;
+        private TextBox textBoxPhone;
+        private TextBox textBoxIDnumber;
+        private RadioButton radioButtonFemale;
+        private RadioButton radioButtonMale;
         private DateTimePicker dateTimePicker1;
-        private TextBox textBox4;
+        private TextBox textBoxName;
+        private Button button4;
+        private Button button3;
+        private Button button2;
+        private Button button1;
     }
 }
