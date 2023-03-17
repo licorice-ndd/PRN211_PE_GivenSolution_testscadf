@@ -43,12 +43,12 @@
             label2 = new Label();
             label1 = new Label();
             groupBox2 = new GroupBox();
+            buttonEdit = new Button();
+            buttonAdd = new Button();
+            buttonClose = new Button();
+            buttonRefresh = new Button();
             groupBox3 = new GroupBox();
             dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -190,10 +190,10 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(button3);
-            groupBox2.Controls.Add(button2);
-            groupBox2.Controls.Add(button1);
+            groupBox2.Controls.Add(buttonEdit);
+            groupBox2.Controls.Add(buttonAdd);
+            groupBox2.Controls.Add(buttonClose);
+            groupBox2.Controls.Add(buttonRefresh);
             groupBox2.Location = new Point(588, 12);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(200, 253);
@@ -201,12 +201,52 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Button";
             // 
+            // buttonEdit
+            // 
+            buttonEdit.Location = new Point(102, 54);
+            buttonEdit.Name = "buttonEdit";
+            buttonEdit.Size = new Size(75, 23);
+            buttonEdit.TabIndex = 3;
+            buttonEdit.Text = "Edit";
+            buttonEdit.UseVisualStyleBackColor = true;
+            buttonEdit.Click += buttonEdit_Click;
+            // 
+            // buttonAdd
+            // 
+            buttonAdd.Location = new Point(6, 54);
+            buttonAdd.Name = "buttonAdd";
+            buttonAdd.Size = new Size(75, 23);
+            buttonAdd.TabIndex = 2;
+            buttonAdd.Text = "Add";
+            buttonAdd.UseVisualStyleBackColor = true;
+            buttonAdd.Click += buttonAdd_Click;
+            // 
+            // buttonClose
+            // 
+            buttonClose.Location = new Point(102, 22);
+            buttonClose.Name = "buttonClose";
+            buttonClose.Size = new Size(75, 23);
+            buttonClose.TabIndex = 1;
+            buttonClose.Text = "Close";
+            buttonClose.UseVisualStyleBackColor = true;
+            buttonClose.Click += buttonClose_Click;
+            // 
+            // buttonRefresh
+            // 
+            buttonRefresh.Location = new Point(6, 22);
+            buttonRefresh.Name = "buttonRefresh";
+            buttonRefresh.Size = new Size(75, 23);
+            buttonRefresh.TabIndex = 0;
+            buttonRefresh.Text = "Refresh";
+            buttonRefresh.UseVisualStyleBackColor = true;
+            buttonRefresh.Click += buttonRefresh_Click;
+            // 
             // groupBox3
             // 
             groupBox3.Controls.Add(dataGridView1);
-            groupBox3.Location = new Point(100, 307);
+            groupBox3.Location = new Point(12, 285);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(614, 239);
+            groupBox3.Size = new Size(776, 261);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "View data";
@@ -214,53 +254,18 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(6, 22);
+            dataGridView1.Location = new Point(13, 22);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(682, 206);
+            dataGridView1.Size = new Size(740, 222);
             dataGridView1.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(6, 22);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Refresh";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(102, 22);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Close";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(6, 54);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 2;
-            button3.Text = "Add";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(102, 54);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 3;
-            button4.Text = "Edit";
-            button4.UseVisualStyleBackColor = true;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(793, 558);
+            ClientSize = new Size(829, 558);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -294,9 +299,9 @@
         private RadioButton radioButtonMale;
         private DateTimePicker dateTimePicker1;
         private TextBox textBoxName;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private Button buttonEdit;
+        private Button buttonAdd;
+        private Button buttonClose;
+        private Button buttonRefresh;
     }
 }
